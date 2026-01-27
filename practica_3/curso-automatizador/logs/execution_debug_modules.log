@@ -1,0 +1,31 @@
+2026-01-15 15:09:00,483 [INFO] ⚡ Iniciando Browser...
+2026-01-15 15:09:00,484 [INFO] ====== WebDriver manager ======
+2026-01-15 15:09:01,732 [INFO] Get LATEST chromedriver version for google-chrome
+2026-01-15 15:09:01,770 [INFO] Get LATEST chromedriver version for google-chrome
+2026-01-15 15:09:01,808 [INFO] Driver [C:\Users\manue\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-15 15:09:03,159 [INFO] 🔐 Login en https://app.thepowermba.com/
+2026-01-15 15:09:08,164 [INFO] ✅ Login OK
+2026-01-15 15:09:15,332 [INFO] 🚀 === PROCESANDO: IA Developer ===
+2026-01-15 15:09:15,332 [INFO] 🔎 Buscando link/botón para: IA Developer
+2026-01-15 15:09:30,844 [WARNING] ⚠️ Timeout esperando dashboard
+2026-01-15 15:09:32,654 [INFO]    🔍 Escaneando módulos...
+2026-01-15 15:09:32,846 [INFO]    📂 Módulo 1: MÓDULOS
+2026-01-15 15:09:36,119 [INFO]    📂 Módulo 2: MÓDULOS
+2026-01-15 15:09:39,381 [INFO]    📂 Módulo 3: MÓDULOS
+2026-01-15 15:09:57,806 [WARNING] ⚠️ Timeout esperando dashboard
+2026-01-15 15:09:57,806 [INFO] 🚀 === PROCESANDO: IA Developer Prework ===
+2026-01-15 15:09:57,806 [INFO] 🔎 Buscando link/botón para: IA Developer Prework
+2026-01-15 15:10:13,156 [WARNING] ⚠️ Timeout esperando dashboard
+2026-01-15 15:10:15,352 [INFO]    🔍 Escaneando módulos...
+2026-01-15 15:10:15,558 [INFO]    📂 Módulo 1: MÓDULOS
+2026-01-15 15:10:22,063 [INFO]    📂 Módulo 2: MÓDULOS
+2026-01-15 15:10:28,491 [INFO]    📂 Módulo 3: MÓDULOS
+2026-01-15 15:10:46,910 [WARNING] ⚠️ Timeout esperando dashboard
+2026-01-15 15:10:46,910 [INFO] 🚀 === PROCESANDO: Especialización · Web Design ===
+2026-01-15 15:10:46,910 [INFO] 🔎 Buscando link/botón para: Especialización · Web Design
+2026-01-15 15:11:02,404 [WARNING] ⚠️ Timeout esperando dashboard
+2026-01-15 15:11:04,568 [INFO]    🔍 Escaneando módulos...
+2026-01-15 15:11:04,725 [INFO]    📂 Módulo 1: MÓDULOS
+2026-01-15 15:11:11,178 [INFO]    📂 Módulo 2: MÓDULOS
+2026-01-15 15:11:17,583 [INFO]    📂 Módulo 3: MÓDULOS
+2026-01-15 15:11:36,133 [WARNING] ⚠️ Timeout esperando dashboard

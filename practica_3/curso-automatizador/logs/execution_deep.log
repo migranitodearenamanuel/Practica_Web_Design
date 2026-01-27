@@ -1,0 +1,15 @@
+2026-01-15 14:35:36,562 - INFO - ⚡ Iniciando Navegador...
+2026-01-15 14:35:36,566 - INFO - ====== WebDriver manager ======
+2026-01-15 14:35:40,964 - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 14:35:41,046 - INFO - Get LATEST chromedriver version for google-chrome
+2026-01-15 14:35:41,091 - INFO - Driver [C:\Users\manue\.wdm\drivers\chromedriver\win64\143.0.7499.192\chromedriver-win32/chromedriver.exe] found in cache
+2026-01-15 14:35:45,993 - INFO - 🔐 Login en: https://app.thepowermba.com/
+2026-01-15 14:35:52,183 - INFO - ✅ Login exitoso.
+2026-01-15 14:36:00,302 - INFO - 🔍 Detectando programas...
+2026-01-15 14:36:05,684 - INFO - 🚀 PROCESANDO PROGRAMA: IA Developer
+2026-01-15 14:36:17,343 - ERROR - ❌ Fallo al entrar a IA Developer
+2026-01-15 14:36:17,343 - INFO - 🚀 PROCESANDO PROGRAMA: IA Developer Prework
+2026-01-15 14:36:28,948 - ERROR - ❌ Fallo al entrar a IA Developer Prework
+2026-01-15 14:36:28,949 - INFO - 🚀 PROCESANDO PROGRAMA: Especialización · Web Design
+2026-01-15 14:36:40,632 - ERROR - ❌ Fallo al entrar a Especialización · Web Design
+2026-01-15 14:36:40,632 - INFO - 🎉 FIN DE EJECUCIÓN TOTAL

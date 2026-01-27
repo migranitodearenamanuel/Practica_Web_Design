@@ -1,0 +1,234 @@
+/* =========================================
+   ESTILOS GENERALES 
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Para que el borde no aumente el tamaño total */
+}
+
+body {
+    /* Fuentes bonitas que nos pasaste */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #000000;
+    /* Fondo negro como la noche */
+    color: #9ad79b;
+    /* Texto verde hacker */
+    padding-bottom: 60px;
+    /* Espacio para que el footer no tape nada al llegar abajo */
+}
+
+/* =========================================
+     CABECERA (HEADER) - SIEMPRE ARRIBA
+     ========================================= */
+header {
+    /* "fixed" para que se quede pegado a la pantalla */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 80px;
+    /* Altura fija */
+
+    background-color: #000000;
+    border-bottom: 2px solid #9ad79b;
+    /* Línea verde abajo */
+
+    /* z-index alto para que pase por encima del texto cuando bajamos */
+    z-index: 1000;
+
+    /* Un poco de espacio interior */
+    padding: 20px;
+    text-align: center;
+    /* Título centrado */
+}
+
+/* =========================================
+     BARRA LATERAL (SIDEBAR) - A LA DERECHA
+     ========================================= */
+.sidebar {
+    /* Fija a la derecha de la pantalla */
+    position: fixed;
+
+    /* "Justo debajo de header". Si el header mide 80px, esto empieza en 80px */
+    top: 80px;
+    right: 0;
+
+    width: 200px;
+    /* Altura automática o podríamos fijarla */
+
+    background-color: #111;
+    /* Un poco más claro que el fondo para que se note */
+    border: 1px dotted #9ad79b;
+    /* Borde punteado estilo retro */
+    padding: 20px;
+
+    /* z-index menor que header pero mayor que contenido si hiciera falta */
+    z-index: 900;
+}
+
+.sidebar ul {
+    list-style: none;
+    /* Quitamos los puntos feos predeterminados */
+    text-align: right;
+    /* Texto alineado a la derecha */
+}
+
+.sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #333;
+    /* Separador sutil */
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    color: #fff;
+    /* Se pone blanco al pasar el ratón */
+}
+
+/* =========================================
+     CONTENIDO PRINCIPAL
+     ========================================= */
+main {
+    /* MÁRGENES CLAVE PARA EVITAR SOLAPAMIENTOS */
+    margin-top: 100px;
+    /* 80px del header + 20px de aire */
+    margin-right: 220px;
+    /* 200px del sidebar + 20px de aire */
+    margin-bottom: 80px;
+    /* Espacio para el footer */
+    margin-left: 20px;
+    /* Un poco de aire a la izquierda */
+
+    position: relative;
+    /* "relative" para que lo de dentro pueda ser absoluto respecto a esto */
+}
+
+.content {
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #9ad79b;
+    display: inline-block;
+    /* Ojo: display inline-block suele permitirse para textos, pero si no, quítalo.
+                             Aquí lo dejo para que el subrayado se ajuste al texto. 
+                             Si somos puristas "no display", el h2 es block por defecto y ocupa todo el ancho. */
+}
+
+.content p {
+    margin-bottom: 15px;
+    color: #ccc;
+    /* Texto un poco más blanco para leer mejor */
+}
+
+/* Botón estilo hacker */
+button {
+    background-color: #9ad79b;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    /* Para poder moverlo si quisiéramos */
+    top: 10px;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+/* =========================================
+     SECCIÓN CARACTERÍSTICAS (POSICIONAMIENTO AVANZADO)
+     ========================================= */
+/* Aquí usamos position para colocar las cajas en columnas SIN usar Flexbox/Grid */
+
+.features {
+    position: relative;
+    /* Contenedor relativo */
+    height: 300px;
+    /* Necesitamos darle altura porque los hijos absolutos "flotan" y no ocupan espacio */
+    margin-top: 50px;
+    border-top: 1px dotted #333;
+}
+
+.features h2 {
+    /* Título centrado usando position absolute */
+    position: absolute;
+    top: -20px;
+    /* Un poco hacia arriba para pisar la línea */
+    left: 50%;
+    margin-left: -100px;
+    /* Centrado clásico: Left 50% y margen negativo mitad del ancho */
+    width: 200px;
+    text-align: center;
+    background-color: #000;
+    /* Fondo negro para tapar la línea */
+}
+
+.feature-item {
+    position: absolute;
+    /* ¡Magia de posicionamiento! */
+    top: 50px;
+    width: 30%;
+    /* Cada columna ocupa el 30% */
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* Posicionamos cada una matemáticamente */
+
+/* Primera columa: pegada a la izquierda */
+.feature-item:nth-of-type(1) {
+    left: 0;
+}
+
+/* Segunda columna: centrada */
+/* center = 50% - mitad del ancho (15%) = 35% */
+.feature-item:nth-of-type(2) {
+    left: 35%;
+}
+
+/* Tercera columna: pegada a la derecha */
+.feature-item:nth-of-type(3) {
+    right: 0;
+    /* O left: 70% */
+}
+
+.feature-item .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: block;
+    /* Iconos en bloque */
+}
+
+/* =========================================
+     PIE DE PÁGINA (FOOTER) - SIEMPRE ABAJO
+     ========================================= */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: #000;
+    border-top: 1px solid #9ad79b;
+    z-index: 1000;
+
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
