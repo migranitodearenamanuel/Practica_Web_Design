@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!-- Documento HTML5 con metadatos: ayudan a navegadores y buscadores a interpretar el contenido. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InspiraPins | Ideas visuales para guardar y explorar</title>
+  <!-- Descripcion para SEO: resume la pagina para resultados de busqueda. -->
+  <meta name="description" content="Explora un feed de ideas visuales para hogar, cocina, moda y viajes. Guarda pines, sigue categorias y descubre inspiracion diaria con tableros personalizados.">
+  <!-- Palabras clave opcionales: se usan si el proyecto las requiere. -->
+  <meta name="keywords" content="ideas visuales, pines, inspiracion, decoracion, recetas saludables, moda, viajes, diseno interior">
+  <!-- Robots: indica si la pagina puede indexarse. -->
+  <meta name="robots" content="index, follow">
+  <!-- Autor del documento para metadatos. -->
+  <meta name="author" content="Equipo InspiraPins">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph: mejora la vista previa cuando se comparte en redes sociales. -->
+  <meta property="og:title" content="InspiraPins | Ideas visuales para guardar y explorar">
+  <meta property="og:description" content="Explora un feed de ideas visuales para hogar, cocina, moda y viajes. Guarda pines, sigue categorias y descubre inspiracion diaria con tableros personalizados.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ejemplo.com/">
+
+  <!-- Twitter Cards: genera una vista previa clara en Twitter/X. -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="InspiraPins | Ideas visuales para guardar y explorar">
+  <meta name="twitter:description" content="Explora un feed de ideas visuales para hogar, cocina, moda y viajes. Guarda pines, sigue categorias y descubre inspiracion diaria con tableros personalizados.">
+
+  <!-- Canonical: evita contenido duplicado; reemplaza la URL con la real del sitio. -->
+  <link rel="canonical" href="https://www.ejemplo.com/">
+
+  <!-- En el futuro, aqui se enlazara un archivo CSS externo para el diseno visual. -->
+</head>
+<body>
+  <!-- Skip link: ayuda a usuarios de teclado a saltar directo al contenido principal. -->
+  <a href="#contenido">Saltar al contenido</a>
+
+  <!-- Encabezado principal: presenta identidad del sitio y accesos clave. -->
+  <header>
+    <!-- El h1 es el titulo principal del documento y debe ser unico. -->
+    <h1>InspiraPins</h1>
+
+    <!-- Formulario de busqueda: mejora la navegacion y requiere label asociado. -->
+    <form action="/buscar" method="get" role="search">
+      <label for="busqueda">Buscar ideas, categorias o autores</label>
+      <input type="search" id="busqueda" name="q" placeholder="Ej: diseno interior nordico" autocomplete="off">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Navegacion secundaria para acciones de usuario, con aria-label por accesibilidad. -->
+    <nav aria-label="Acciones de usuario">
+      <ul>
+        <li><a href="/perfil">Perfil</a></li>
+        <li><a href="/tableros">Mis tableros</a></li>
+        <li><a href="/mensajes">Mensajes</a></li>
+        <li><a href="/configuracion">Configuracion</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navegacion principal: organiza categorias para descubrir contenido. -->
+  <nav aria-label="Navegacion principal">
+    <ul>
+      <li><a href="/categoria/decoracion-minimalista">Decoracion minimalista</a></li>
+      <li><a href="/categoria/recetas-saludables">Recetas saludables</a></li>
+      <li><a href="/categoria/diseno-interior-nordico">Diseno interior nordico</a></li>
+      <li><a href="/categoria/moda-sostenible">Moda sostenible</a></li>
+      <li><a href="/categoria/viajes-cercanos">Viajes cercanos</a></li>
+      <li><a href="/categoria/plantas-de-interior">Plantas de interior</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal: incluye el feed, que es el foco de la pagina. -->
+  <main id="contenido">
+    <!-- Seccion del feed: agrupa los pines para dar contexto semantico. -->
+    <section aria-labelledby="titulo-feed">
+      <h2 id="titulo-feed">Feed principal</h2>
+
+      <!-- Lista de pines: ul es ideal para colecciones de elementos similares. -->
+      <ul>
+        <!-- Cada <li> contiene un <article> porque cada pin es contenido independiente. -->
+        <li>
+          <article>
+            <a href="/pin/1234-cafe-aesthetic">
+              <!-- Figure y figcaption asocian imagen y descripcion de forma semantica. -->
+              <figure>
+                <img src="https://picsum.photos/id/1060/400/600" alt="Mesa de cafe con taza humeante, libro abierto y luz suave de ventana" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Cafe aesthetic para una manana tranquila</figcaption>
+              </figure>
+            </a>
+            <p>Guardado por Ana Lopez en <a href="/categoria/cafe-e-inspiracion">Cafe e inspiracion</a></p>
+            <p><time datetime="2024-03-10">10 mar 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/5678-diseno-interior-nordico">
+              <figure>
+                <img src="https://picsum.photos/id/1027/400/600" alt="Salon nordico con sofa claro, manta tejida y plantas verdes" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Salon nordico con luz natural</figcaption>
+              </figure>
+            </a>
+            <p>Guardado por Diego Ruiz en <a href="/categoria/diseno-interior-nordico">Diseno interior nordico</a></p>
+            <p><time datetime="2024-03-12">12 mar 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/2468-receta-bowl-saludable">
+              <figure>
+                <img src="https://picsum.photos/id/1080/400/600" alt="Bowl de quinoa con aguacate, tomate y brotes frescos" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Bowl saludable para almuerzo rapido</figcaption>
+              </figure>
+            </a>
+            <p>Categoria: <a href="/categoria/recetas-saludables">Recetas saludables</a></p>
+            <p><time datetime="2024-03-08">08 mar 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/1357-plantas-de-interior">
+              <figure>
+                <img src="https://picsum.photos/id/1020/400/600" alt="Rincon con macetas de interior y estanteria de madera clara" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Rincon verde para el hogar</figcaption>
+              </figure>
+            </a>
+            <p>Guardado por Lucia Perez en <a href="/categoria/plantas-de-interior">Plantas de interior</a></p>
+            <p><time datetime="2024-02-28">28 feb 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/9753-moda-sostenible-denim">
+              <figure>
+                <img src="https://picsum.photos/id/1005/400/600" alt="Chaqueta denim reciclada colgada en percha de madera" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Denim reutilizado con estilo</figcaption>
+              </figure>
+            </a>
+            <p>Categoria: <a href="/categoria/moda-sostenible">Moda sostenible</a></p>
+            <p><time datetime="2024-02-25">25 feb 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/8642-viaje-costa-tranquila">
+              <figure>
+                <img src="https://picsum.photos/id/1018/400/600" alt="Costa con acantilados y mar azul en tarde despejada" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Escapada a la costa tranquila</figcaption>
+              </figure>
+            </a>
+            <p>Guardado por Sergio Mora en <a href="/categoria/viajes-cercanos">Viajes cercanos</a></p>
+            <p><time datetime="2024-03-01">01 mar 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/7531-escritorio-minimalista">
+              <figure>
+                <img src="https://picsum.photos/id/1050/400/600" alt="Escritorio limpio con laptop, libreta y lapiz sobre madera clara" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Organizacion simple del escritorio</figcaption>
+              </figure>
+            </a>
+            <p>Categoria: <a href="/categoria/productividad">Productividad</a></p>
+            <p><time datetime="2024-03-05">05 mar 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/6420-decoracion-minimalista-sala">
+              <figure>
+                <img src="https://picsum.photos/id/1039/400/600" alt="Sala minimalista con sofa gris, mesa baja y alfombra neutra" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Decoracion minimalista en tonos neutros</figcaption>
+              </figure>
+            </a>
+            <p>Guardado por Marta Gil en <a href="/categoria/decoracion-minimalista">Decoracion minimalista</a></p>
+            <p><time datetime="2024-03-06">06 mar 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/5319-postre-frutas-yogur">
+              <figure>
+                <img src="https://picsum.photos/id/1081/400/600" alt="Vaso de yogur con frutas frescas y granola crujiente" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Postre ligero con yogur y fruta</figcaption>
+              </figure>
+            </a>
+            <p>Categoria: <a href="/categoria/recetas-saludables">Recetas saludables</a></p>
+            <p><time datetime="2024-03-03">03 mar 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/4208-fotografia-callejera-lluvia">
+              <figure>
+                <img src="https://picsum.photos/id/1033/400/600" alt="Calle mojada con reflejos de luces y paraguas en movimiento" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Fotografia callejera en dia de lluvia</figcaption>
+              </figure>
+            </a>
+            <p>Guardado por Paula Rios en <a href="/categoria/fotografia-urbana">Fotografia urbana</a></p>
+            <p><time datetime="2024-02-20">20 feb 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/3197-arte-tipografico-frase">
+              <figure>
+                <img src="https://picsum.photos/id/1056/400/600" alt="Cartel tipografico con frase motivadora en blanco y negro" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Tipografia limpia para pared de estudio</figcaption>
+              </figure>
+            </a>
+            <p>Categoria: <a href="/categoria/diseno-grafico">Diseno grafico</a></p>
+            <p><time datetime="2024-02-18">18 feb 2024</time></p>
+          </article>
+        </li>
+
+        <li>
+          <article>
+            <a href="/pin/2086-habitacion-infantil-suave">
+              <figure>
+                <img src="https://picsum.photos/id/1066/400/600" alt="Habitacion infantil con cuna blanca, pared pastel y juguetes de madera" width="400" height="600" loading="lazy" decoding="async">
+                <figcaption>Habitacion infantil en tonos suaves</figcaption>
+              </figure>
+            </a>
+            <p>Guardado por Elena Cruz en <a href="/categoria/diseno-interior-nordico">Diseno interior nordico</a></p>
+            <p><time datetime="2024-03-09">09 mar 2024</time></p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Aside: contenido complementario que no interrumpe el feed principal. -->
+    <aside aria-labelledby="titulo-tendencias">
+      <h2 id="titulo-tendencias">Tendencias y sugerencias</h2>
+      <p>Seccion corta para descubrir temas populares y ampliar la exploracion.</p>
+      <ul>
+        <li><a href="/categoria/hogar-organizado">Hogar organizado</a></li>
+        <li><a href="/categoria/arte-digital">Arte digital</a></li>
+        <li><a href="/categoria/ideas-para-regalos">Ideas para regalos</a></li>
+        <li><a href="/categoria/paisajismo-sostenible">Paisajismo sostenible</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer: contiene enlaces legales y datos de contacto. -->
+  <footer>
+    <!-- Navegacion secundaria en el footer para enlaces de soporte y legales. -->
+    <nav aria-label="Navegacion del footer">
+      <ul>
+        <li><a href="/ayuda">Ayuda</a></li>
+        <li><a href="/terminos">Terminos</a></li>
+        <li><a href="/privacidad">Privacidad</a></li>
+        <li><a href="/accesibilidad">Accesibilidad</a></li>
+      </ul>
+    </nav>
+
+    <!-- Address se usa para datos de contacto oficiales del sitio. -->
+    <address>
+      <p>Contacto: <a href="mailto:hola@inspirapins.com">hola@inspirapins.com</a></p>
+      <p>Calle Falsa 123, Madrid, Espana</p>
+    </address>
+
+    <p>(c) 2024 InspiraPins. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
