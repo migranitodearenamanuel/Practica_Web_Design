@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI Random</title>
+    <!-- Aquí conecto mi archivo de JavaScript (index.js) y le digo 'defer' para que espere a que el HTML esté listo -->
+    <script src="index.js" defer></script>
+    <style>
+        /* Un poquito de CSS para centrar todo y que se vea chulo */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #333;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .random-image {
+            width: 300px;
+            height: 300px;
+            border: 5px solid gold;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Esta es la etiqueta de imagen donde voy a poner al Pokemon aleatorio -->
+    <img class="random-image" alt="Pokemon Aleatorio">
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Thrones API</title>
+    <!-- Aquí le digo a mi página web que cargue el archivo de cerebro (JavaScript) llamado index.js, y que espere a que todo el HTML esté listo antes de ejecutarlo (defer) -->
+    <script src="index.js" defer></script>
+    <style>
+        /* Un poco de estilo para que se vea bonito */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        img {
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personajes de Game of Thrones</h1>
+    <!-- Este es el menú desplegable donde pondré los nombres de los personajes -->
+    <select id="character-list">
+        <option value="" disabled selected>Selecciona un personaje</option>
+    </select>
+    <div>
+        <!-- Aquí aparecerá la imagen del personaje seleccionado -->
+        <img class="character-image" alt="Imagen del personaje">
+    </div>
+</body>
+</html>
